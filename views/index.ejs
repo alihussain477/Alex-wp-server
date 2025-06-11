@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ALEX WP LOADER</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      padding: 40px;
+    }
+    input, button {
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+    }
+    h2 {
+      color: magenta;
+    }
+  </style>
+</head>
+<body>
+  <h2>🌟 ALEX WP LODER 🌟</h2>
+  <form action="/start" method="POST" enctype="multipart/form-data">
+    <label>📞 Target Number:</label><br>
+    <input type="text" name="targetNumber" required><br>
+
+    <label>📄 Message File (.txt):</label><br>
+    <input type="file" name="messageFile" accept=".txt" required><br>
+
+    <label>📝 Header Name:</label><br>
+    <input type="text" name="headerName" required><br>
+
+    <label>⏱ Delay (in seconds):</label><br>
+    <input type="number" name="delaySeconds" min="1" required><br>
+
+    <button type="submit">🚀 Start Sending</button>
+  </form>
+</body>
+</html>
